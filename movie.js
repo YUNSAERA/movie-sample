@@ -1,3 +1,6 @@
+import config from "./config.js";
+const { API_KEY } = config
+
 // 검색창 부분을 쉽게 찾을 수 있게 변수(formContainer)에 저장
 const formContainer = document.querySelector("#form-container");
 
@@ -15,11 +18,11 @@ const options = {
 // 영화 정보를 저장하는 map 생성 movieMap (제목 , 영화 카드)
 let movieMap = new Map();
 // 전체 영화 목록 정보
-let allMovies;
+let allMovies; 
 
 // 영화 정보 가져오기
 fetch(
-  "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1", // 영화 정보 사이트 주소
+  `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}`, // 영화 정보 사이트 주소
   options // 필요한 인증 정보
 ) // 연결이 됨 > 이후 진행
   .then((response) => response.json()) // 접속 한 후 받은 정보를 json 형식으로 변환
