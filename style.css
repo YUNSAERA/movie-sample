@@ -1,0 +1,56 @@
+body {
+    max-width: 1200px; /* 전체 최대 넓이값 */
+    margin: 0 auto; /* 모든요소 좌우 중앙 정렬 */
+}
+body header h1 {
+    text-align: center; /* 상단 제목 가운데 정렬 */
+    font-size: 64px; /* 상단 제목 폰트크기 */
+    font-weight: bold; /* 상단 제목 폰트굵기 */
+    margin: 0; /* 브라우저 기본 여백 제거 */
+}
+
+body main {
+    text-align: center; /* 검색창 가운데 정렬 */
+}
+form#form-container label {
+    font-size: 30px; /* 검색창 제목 폰트크기 */
+}
+form#form-container input#search-input {
+    font-size: 30px; /* 검색창 입력부 폰트크기 */
+    width: calc(100% - 300px); /* 검색창 넓이 (100% 넓이에서 좌우 제목과 버튼 넓이 뺀값) */
+}
+form#form-container button {
+    font-size: 20px; /* 검색창 버튼 폰트크기 */
+    padding: 7.5px 20px; /* 검색창 버튼 사이즈 조절 */
+    vertical-align: bottom; /* 검색창 버튼 입력창과 정렬 동일하게 */
+}
+
+
+.title{
+    font-size: 36px;
+}
+.card{
+    border-color: aqua;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body {
+    background-color: #eee;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto; /* 좌우 중앙 정렬 */
+}
+.movieCard{
+    width: 300px;
+    margin: 20px; /* 상하좌우 마진 동일하게 설정 */
+    box-shadow: 0px 0px 0px 2px black;
+    padding: 20px;
+    transition: all .3s ease;
+}
+.movieCard:hover{
+    box-shadow: 0px 0px 20px 20px #a1a1a1;
+}

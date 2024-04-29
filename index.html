@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내배캠 최고 평점 영화</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+        * {
+            font-family: "Single Day", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>movie collection</h1>
+    </header>
+    <main>
+        <form id="form-container">
+        <label>영화 검색 : </label>
+            <input type="text" id="search-input" placeholder="영화 제목을 검색해보세요">
+            <button class="form-button" type="button">검색</button>
+        </form>
+    </main>
+    <section>
+        <div class="card">
+            <div id="cardContainer" class="cardContainer">
+            </div>
+        </div>
+    </section>
+    <script src="./movie.js"></script>
+</body>
+
+</html>
